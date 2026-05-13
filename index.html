@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acyclovir 藥理機轉與臨床應用</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Serif+TC:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <div class="kicker">臨床情境回顧</div>
+            <h1 class="title">Acyclovir 的藥理機轉、副作用及監測與預防</h1>
+            <p class="subtitle">張小姐確診為 HSV-1 腦炎，急診醫師開立 IV Acyclovir 750 mg Q8H（依體重計算約 10 mg/kg）進行經驗性治療，隔天 PCR 確認後繼續使用。</p>
+            <div class="scroll-prompt">
+                <p>Scroll to explore</p>
+                <div class="arrow">↓</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Mechanism (Centered Text) -->
+        <section class="centered-section" id="mechanism">
+            <h2 class="section-title text-center">❶ Acyclovir 的藥理機轉為何？</h2>
+            <div class="reading-text">
+                
+                <div class="step fade-in">
+                    <h3>🔬 結構基礎</h3>
+                    <p>Acyclovir（無環鳥嘌呤核苷）本質上是一種<strong>鳥嘌呤核苷類似物（Guanosine Analogue）</strong>。當病毒在複製 DNA 時，會誤將其視為正常的 guanosine 而嵌入 DNA 鏈中，進而透過一系列機制有效抑制疱疹病毒的 DNA 複製。</p>
+                    <p>它在結構上最關鍵的特徵，在於<strong>缺乏核糖環上的 3'-OH 基團</strong>（這也是「無環」名稱的由來）。這個刻意存在的結構缺陷，賦予了它在 DNA 複製過程中扮演「終止劑」的核心能力。</p>
+                </div>
+
+                <div class="step fade-in">
+                    <h3>🧬 三步驟活化機制</h3>
+                    <p>Acyclovir 本身屬於前驅藥物（Prodrug），進入細胞後尚未具備療效。它必須在細胞內歷經三次磷酸化（轉化為單磷酸、二磷酸，最終成為具備活性的 <strong>Acyclovir Triphosphate, ACV-TP</strong>），才能發揮抗病毒作用。</p>
+                </div>
+
+                <div class="step fade-in">
+                    <h3>Step 1：病毒胸腺嘧啶激酶 (Viral TK) 啟動</h3>
+                    <p class="highlight-box"><strong>高度選擇性：</strong>這一步是藥物安全的關鍵！人類細胞的 TK 對 Acyclovir 的親和力極低（僅約為 HSV-TK 的 1/3000）。這意味著只有「被 HSV/VZV 感染的細胞」才能有效活化它；正常未感染的細胞幾乎不受影響，大幅降低了全身性副作用。</p>
+                    <p>當 Acyclovir 進入受感染的細胞後，必須依賴<strong>病毒自身編碼的胸腺嘧啶激酶（Viral TK）</strong>將其進行首次磷酸化，轉變為 Acyclovir 單磷酸（ACV-MP）。</p>
+                </div>
+
+                <div class="step fade-in">
+                    <h3>Step 2：宿主細胞激酶二次磷酸化</h3>
+                    <p>形成 ACV-MP 後，接著會被移交給人體的激酶（如 Guanylate Kinase 與 Nucleoside Diphosphate Kinase）進行接力。它們會依序為藥物加上第二與第三個磷酸根，最終合成出真正具有打擊能力的 <strong>Acyclovir Triphosphate (ACV-TP)</strong>。</p>
+                </div>
+
+                <div class="step fade-in">
+                    <h3>Step 3：雙重抑制病毒 DNA 複製</h3>
+                    <p>活化後的 ACV-TP 會透過以下兩種機制，不可逆地阻斷病毒複製程序：</p>
+                    <ul>
+                        <li><strong>競爭性抑制：</strong>它會與正常的 dGTP 競爭，搶先與病毒 DNA 聚合酶（Viral DNA Polymerase）結合。由於其親和力高達宿主 DNA 聚合酶的 10–30 倍，因此能精準打擊病毒。</li>
+                        <li><strong>鏈終止 (Chain Termination)：</strong>一旦 ACV-TP 被錯誤地加入病毒 DNA 鏈中，由於缺乏 3'-OH 基團，下一段 DNA 便無法順利連接，導致複製程序被迫中止。同時，它還會與聚合酶形成「死亡複合體 (Dead-end Complex)」，使聚合酶永久失去活性。</li>
+                    </ul>
+                </div>
+
+                <div class="step fade-in">
+                    <h3>✅ 抗病毒覆蓋範圍</h3>
+                    <p>由於這套活化機制幾乎完全依賴病毒自帶的 TK 酵素，Acyclovir 主要針對<strong>皰疹病毒科（Herpesviridae）</strong>發揮效用。不同病毒的激酶種類，直接決定了藥物被活化的效率：</p>
+                    <table class="data-table">
+                        <tr><th>病毒種類</th><th>效力說明</th></tr>
+                        <tr><td><strong>HSV-1（單純皰疹第一型）</strong></td><td>最強，IC₅₀ 最低（擁有非常有效的 Viral TK）</td></tr>
+                        <tr><td><strong>HSV-2（單純皰疹第二型）</strong></td><td>強</td></tr>
+                        <tr><td><strong>VZV（水痘帶狀皰疹病毒）</strong></td><td>中等（TK 親和力略遜一籌，臨床上通常需要更高劑量）</td></tr>
+                        <tr><td>EBV</td><td>弱（雖有活性但通常不作為首選）</td></tr>
+                        <tr><td>CMV</td><td><strong>無效</strong>（因缺乏 TK 基因，依賴 UL97 酵素，對 Acyclovir 活化能力極差，需改用 Ganciclovir 等藥物）</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Formulations -->
+        <section class="standard-section bg-light" id="forms">
+            <h2 class="section-title text-center">❷ Acyclovir 劑型</h2>
+            <div class="grid-container">
+                <table class="full-table">
+                    <thead>
+                        <tr>
+                            <th>劑型</th>
+                            <th>常見強度</th>
+                            <th>適用狀況</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>口服錠 (Oral tablet)</td>
+                            <td>200 mg, 400 mg, 800 mg</td>
+                            <td>口唇部單純皰疹、生殖器皰疹、帶狀皰疹（輕中度）、預防復發</td>
+                        </tr>
+                        <tr>
+                            <td>口服 suspension</td>
+                            <td>200 mg/5 mL</td>
+                            <td>兒童、吞嚥困難者、需精細調整劑量時（如腎功能不全）</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>靜脈注射劑 (IV)</td>
+                            <td>250 mg, 500 mg</td>
+                            <td>HSV/VZV 侵犯中樞神經（腦炎/腦膜炎）、免疫低下者嚴重感染、難治型/嚴重皮膚感染</td>
+                        </tr>
+                        <tr>
+                            <td>局部外用軟膏 (Topical)</td>
+                            <td>5%</td>
+                            <td>口唇單純皰疹、局部皮膚 HSV 感染</td>
+                        </tr>
+                        <tr>
+                            <td>眼用軟膏 (Ophthalmic)</td>
+                            <td>3%</td>
+                            <td>HSV keratitis（疱疹性角膜炎）</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="image-gallery">
+                <figure>
+                    <img src="https://www.doctorfox.co.uk/imgs-products/sd/16x9/aciclovir-400mg.jpg" alt="Acyclovir Tablets">
+                    <figcaption>口服錠</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk1hhAhgbcKIc_WHMAJLj7ZCKr4vkS4mrCBQ&s" alt="Oral Suspension">
+                    <figcaption>口服懸浮液</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzGozwqwuVmTVRsu4TIkJgtdIyLu4gqbjbxQ&s" alt="IV">
+                    <figcaption>靜脈注射劑</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiKpT5-QdLw3bwmBARc2BewZ8GOh_8hKLzAQ&s" alt="Topical Cream">
+                    <figcaption>局部外用軟膏</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Xia_S6OVk41gNX94u0ziCyFD0TsQQpeNIw&s" alt="Ophthalmic">
+                    <figcaption>眼用軟膏</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Section 3: Side Effects -->
+        <section class="standard-section" id="side-effects">
+            <h2 class="section-title text-center">❸ 有哪些可能的副作用？</h2>
+            
+            <div class="masonry-grid">
+                <div class="side-effect-card danger-card">
+                    <h3>1. 腎毒性 <span>(發生率 5-10% 高劑量 IV)</span> ★★★★</h3>
+                    <p><strong>機制：</strong>Acyclovir 主要經腎臟排泄，濃度過高時會結晶析出 (crystalluria)，造成腎小管阻塞、急性腎小管壞死。</p>
+                    <p><strong>好發：</strong>靜脈快速注射、脫水、腎功能不全、高劑量使用 (如 HSV 腦炎 10 mg/kg Q8H)。</p>
+                    <p><strong>表現：</strong>血清肌酸酐上升、少尿、腰痛、血尿。通常在給藥後 24-48 小時出現。嚴重可進展至 AKI。</p>
+                    <p class="case-note">⚠️ 本案張小姐原本 Cr 0.44 mg/dL 屬低值，但仍需監測，腦炎患者容易脫水。</p>
+                </div>
+
+                <div class="side-effect-card warning-card">
+                    <h3>2. 神經毒性 <span>(發生率 1-4%)</span> ★★★★</h3>
+                    <p><strong>機制：</strong>代謝物 CMMG 在腎功能不全時蓄積，有神經興奮毒性。</p>
+                    <p><strong>症狀：</strong>震顫、肌躍症、躁動、定向感混亂、幻覺、甚至癲癇。</p>
+                    <p><strong>注意：</strong>症狀可能與 HSV 腦炎本身混淆，增加判斷難度。</p>
+                </div>
+
+                <div class="side-effect-card">
+                    <h3>3. 靜脈炎與局部反應 ★★</h3>
+                    <p>因 Acyclovir pH 值偏高 (9-11)，具強鹼性。濃度太高或注射太快會造成 endothelial injury、發炎、疼痛、紅腫。結晶也會刺激血管壁。</p>
+                </div>
+
+                <div class="side-effect-card">
+                    <h3>4. 消化道副作用 ★</h3>
+                    <p>口服較明顯：噁心、嘔吐、腹瀉、腹痛。靜脈製劑少見。</p>
+                </div>
+
+                <div class="side-effect-card">
+                    <h3>5. 血液毒性 ★★★</h3>
+                    <p>罕見，多見於免疫低下或高劑量 IV。Leukopenia、Neutropenia、Thrombocytopenia 甚至 TTP/HUS。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Monitoring -->
+        <section class="standard-section bg-dark text-light" id="monitoring">
+            <h2 class="section-title">❸ 如何監測與預防？</h2>
+            
+            <div class="monitor-columns">
+                <div class="column">
+                    <h3>一、腎毒性的預防與監測</h3>
+                    <ul class="fancy-list">
+                        <li><strong>充分水化 (Hydration)：</strong>最重要的預防！靜注前後給予足夠輸液，建議維持尿量 > 75–150 mL/hr。</li>
+                        <li><strong>緩慢靜脈注射：</strong>至少滴注 1 小時，不可快速推注。</li>
+                        <li><strong>每日監測：</strong>Cr、BUN、尿液分析。若 Cr 急速上升 (> 0.5 或超基準 1.5 倍) 需減量。觀察尿液結晶。</li>
+                    </ul>
+                    
+                    <h4>依腎功能 (CrCl) 調整劑量</h4>
+                    <table class="dark-table">
+                        <tr><th>CrCl (mL/min)</th><th>劑量調整 (10mg/kg 基準)</th></tr>
+                        <tr><td>> 50</td><td>正常：Q8H</td></tr>
+                        <tr><td>25–50</td><td>Q12H</td></tr>
+                        <tr><td>10–24</td><td>Q24H</td></tr>
+                        <tr><td>< 10</td><td>5 mg/kg Q24H (透析後補充)</td></tr>
+                    </table>
+                </div>
+
+                <div class="column">
+                    <h3>二、神經毒性監測</h3>
+                    <p>每日評估意識狀態，區分藥物毒性與腦炎：</p>
+                    <table class="dark-table">
+                        <tr><th>項目</th><th>藥物毒性</th><th>HSV 腦炎</th></tr>
+                        <tr><td>時間</td><td>用藥後 1-3 天</td><td>進展性/治療前已有</td></tr>
+                        <tr><td>腎功能</td><td>常異常 (Cr 上升)</td><td>不一定</td></tr>
+                        <tr><td>發燒</td><td>通常沒有</td><td>常見</td></tr>
+                        <tr><td>影像/CSF</td><td>無特異惡化</td><td>顳葉異常</td></tr>
+                    </table>
+
+                    <h3 class="mt-4">三、靜脈炎預防</h3>
+                    <p>考慮中心靜脈導管 (PICC/CVC)，充分稀釋，輪換部位。</p>
+                </div>
+            </div>
+
+            <div class="summary-box">
+                <h3>📚 重點整理 & 療程</h3>
+                <p><strong>HSV 腦炎標準療程：</strong> IV Acyclovir 10 mg/kg Q8H × 14–21 天。完成後考慮口服 Valacyclovir 預防復發。</p>
+                <p><strong>整體監測：</strong>每日腎功能與電解質、尿量、意識狀態；每次注射前看部位；每週 CBC。</p>
+            </div>
+        </section>
+
+        <!-- Section 5: Quiz -->
+        <section class="standard-section quiz-section" id="quiz">
+            <h2 class="section-title text-center">六、國考題挑戰</h2>
+            <div id="quiz-container">
+                <!-- Quizzes dynamically injected by JS -->
+            </div>
+        </section>
+
+        <!-- References -->
+        <section class="references">
+            <div class="ref-content">
+                <h2>參考資料</h2>
+                <ol>
+                    <li>Acyclovir prescribing information. Pfizer/Generic manufacturers.</li>
+                    <li>Lexicomp. Acyclovir: Drug Information. UpToDate. 2024.</li>
+                    <li>Tyler KL. Acute Viral Encephalitis. N Engl J Med. 2018;379(6):557-566.</li>
+                    <li>Morfin F, Thouvenot D. Herpes simplex virus resistance to antiviral drugs. J Clin Virol. 2003;26(1):29-37.</li>
+                    <li>Whitley RJ, Alford CA, Hirsch MS, et al. Vidarabine versus acyclovir therapy in herpes simplex encephalitis. N Engl J Med. 1986;314(3):144-149.</li>
+                    <li>Brigden D, Whiteman P. The clinical pharmacology of acyclovir and its prodrugs. Scand J Infect Dis Suppl. 1985;47:33-39.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
